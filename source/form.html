@@ -3,50 +3,51 @@
 <head>
   <meta charset="utf-8">
   <title>Pink: форма отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
     <div class="logo">Pink</div>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li>
-          <a href="#">Главная</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
-        <li>
-          <a href="#">Фотографии</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="photo.html">Фотографии</a>
         </li>
-        <li>
-          <a href="#">Конкурс</a>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active">Конкурс</a>
         </li>
-        <li>
-          <a href="#">Htmlacaemy</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://htmlacademy.ru/">Htmlacaemy</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="page-main form">
-    <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    <div class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</div>
+  <main class="page-main page-main--form">
+    <h1 class="page-main--form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-main--form__text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</div>
     <form action="https://echo.htmlacademy.ru" class="review-form" method="get">
-      <fieldset>
-        <legend><span class="visually-hidden">Контакты</span></legend>
+      <fieldset class="review-form__fieldset">
+        <legend class="review-form__legend"><span class="visually-hidden">Контакты</span></legend>
         <ul>
           <li>
-            <label for="surname-field">Фамилия:</label>
+            <label class="review-form__label review-form__label--alotted" for="surname-field">Фамилия:</label>
             <input type="text" name="surname" id="surname-field" required placeholder="Укажите фамилию *">
           </li>
           <li>
-            <label for="name-field">Имя:</label>
+            <label class="review-form__label review-form__label--alotted" for="name-field">Имя:</label>
             <input type="text" name="name" id="name-field" required placeholder="Введите ваше имя *">
           </li>
           <li>
-            <label for="">Отчество:</label>
+            <label class="review-form__label review-form__label--alotted" for="">Отчество:</label>
             <input type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>С каким приложением путешествовали?</legend>
+      <fieldset class="review-form__fieldset">
+        <legend class="review-form__legend">С каким приложением путешествовали?</legend>
         <ul>
           <li>
             <label for="radio-1">Pink для iOS</label>
@@ -62,21 +63,21 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>Контактная информация</legend>
+      <fieldset class="review-form__fieldset">
+        <legend class="review-form__legend">Контактная информация</legend>
         <ul>
           <li>
             <input type="phone" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
-            <label for="phone-field">Номер телефона</label>
+            <label class="review-form__label review-form__label--alotted" for="phone-field">Номер телефона</label>
           </li>
           <li>
             <input type="email" name="email" id="email-field" placeholder="Введите почту *" required>
-            <label for="email-field">Адрес почты</label>
+            <label class="review-form__label review-form__label--alotted" for="email-field">Адрес почты</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>Ваши безбашенные достижения в путешествии</legend>
+      <fieldset class="review-form__fieldset">
+        <legend class="review-form__legend">Ваши безбашенные достижения в путешествии</legend>
         <ul>
           <li>
             <input type="checkbox" name="selfie" id="checkbox-1" checked>
@@ -104,8 +105,8 @@
           </li>
         </ul>
       </fieldset>
-      <div>
-        <h2>Опишите свои эмоции</h2>
+      <fieldset class="review-form__fieldset">
+        <legend class="review-form__legend">Опишите свои эмоции</legend>
         <textarea name="comment" id="comment-field" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
       </div>
       <button class="button button--form">Отправить форму</button>
