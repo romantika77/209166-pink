@@ -7,110 +7,128 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">Pink</div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/">Htmlacaemy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="content-wrapper">
+        <div class="page-header__logo"><svg class="page-header__logo-image" version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+        <g>
+          <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+          <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+          <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+          <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+        </g></svg>
+      </div>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <nav class="page-header__navigation main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">Htmlacademy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <div class="application">
-        <div class="application__picture">
-          <img src="http://placehold.it/150x100">
+        <div class="content-wrapper">
+          <div class="application__picture">
+            <img src="img/iphone-hand-mobile@1x.png" alt="iPhone in hand">
+          </div>
+          <button type="button" class="application__button">Скачать приложение</button>
+          <ul class="application__list os">
+            <li class="os__item">
+              <img src="img/logo-apple.svg" width="46" height="57" alt="logo Apple">
+            </li>
+            <li class="os__item">
+              <img src="img/logo-android.svg" width="42" height="57" alt="logo Android">
+            </li>
+            <li class="os__item">
+              <img src="img/logo-microsoft.svg" width="44" height="42" alt="logo Windows">
+            </li>
+          </ul>
+          <p class="application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <button type="application__button">Скачать прриложение</button>
-        <ul class="os">
-          <li class="os__item">
-            <img src="img/logo-apple.svg" width="46" height="57" alt="logo Apple">
-          </li>
-          <li class="os__item">
-            <img src="img/logo-android.svg" width="42" height="57" alt="logo Android">
-          </li>
-          <li class="os__item">
-            <img src="img/logo-microsoft.svg" width="44" height="42" alt="logo Windows">
-          </li>
-        </ul>
-        <p class="application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
       <div class="adv">
-        <div class="adv__heading">
-          <p class="adv__title adv__title--title1">Устали от серости мегапоолиса?</p>
-          <p class="adv__title adv__title--title2">Нам есть, что вам предложить!</p>
-        </div>
-        <div class="adv__container">
-          <div class="adv__item adv__item--item1">
-            <h2 class="adv__caption">Поднимает настроение</h2>
-            <p class="adv__desk">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <div class="content-wrapper">
+          <div class="adv__heading">
+            <p class="adv__title adv__title--title1">Устали от серости мегапоолиса?</p>
+            <p class="adv__title adv__title--title2">Нам есть, что вам предложить!</p>
           </div>
-          <div class="adv__item adv__item--item2">
-            <h2 class="adv__caption">Меняет мир вокруг!</h2>
-            <p class="adv__desk">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <div class="adv__container">
+            <div class="adv__item adv__item--item1">
+              <h2 class="adv__caption">Поднимает настроение</h2>
+              <p class="adv__desk">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="adv__item adv__item--item2">
+              <h2 class="adv__caption">Меняет мир вокруг!</h2>
+              <p class="adv__desk">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="adv__item adv__item--item3">
+              <h2 class="adv__caption">Заводит новых друзей</h2>
+              <p class="adv__desk">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+            <section class="reviews">
+              <h2 class="visually-hidden">Отзывы</h2>
+              <div class="reviews__item reviews__item--item1">
+                <p class="reviews__name">Николай Петров</p>
+                <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+              </div>
+              <div class="reviews__item reviews__item--item1">
+                <p class="reviews__name"></p>
+                <p class="reviews__text"></p>
+              </div>
+              <div class="reviews__item reviews__item--item1">
+                <p class="reviews__name"></p>
+                <p class="reviews__text"></p>
+              </div>
+            </section>
+            <table>
+              <tr>
+                <th>Стандарт 3,99 USD</th>
+                <td>Розовый фильтр</td>
+                <td>Смайлики</td>
+                <td>Комментарии</td>
+              </tr>
+            </table>
           </div>
-          <div class="adv__item adv__item--item3">
-            <h2 class="adv__caption">Заводит новых друзей</h2>
-            <p class="adv__desk">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </div>
-          <section class="reviews">
-            <h2 class="visually-hidden">Отзывы</h2>
-            <div class="reviews__item reviews__item--item1">
-              <p class="reviews__name">Николай Петров</p>
-              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            </div>
-            <div class="reviews__item reviews__item--item1">
-              <p class="reviews__name"></p>
-              <p class="reviews__text"></p>
-            </div>
-            <div class="reviews__item reviews__item--item1">
-              <p class="reviews__name"></p>
-              <p class="reviews__text"></p>
-            </div>
-          </section>
-          <table>
-            <tr>
-              <th>Стандарт 3,99 USD</th>
-              <td>Розовый фильтр</td>
-              <td>Смайлики</td>
-              <td>Комментарии</td>
-            </tr>
-          </table>
         </div>
       </div>
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts-title">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="contacts__phone"><strong class="contacts__act">Звоните: </strong><span class="contacts__info">+7(812)555-66-66</span></p>
-        <p class="contacts__mail"><strong class="contacts__act">Пишите: </strong><span class="contacts__info">mail@htmlacademy.ru</span></p>
-        <p class="contacts__location"><strong class="contacts__act">Приезжайте в гости: </strong><span class="contacts__info">Большая Конюшенная, 19/8</span></p>
+        <div class="content-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts-title">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__phone"><strong class="contacts__act">Звоните: </strong><span class="contacts__info">+7(812)555-66-66</span></p>
+          <p class="contacts__mail"><strong class="contacts__act">Пишите: </strong><span class="contacts__info">mail@htmlacademy.ru</span></p>
+          <p class="contacts__location"><strong class="contacts__act">Приезжайте в гости: </strong><span class="contacts__info">Большая Конюшенная, 19/8</span></p>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
       </section>
     </main>
-    <footer class="page-footer page-footer--only-index-mobile">
-      <div class="page-footer__logo">
-        <a class="page-footer__link" href="index.html">Pink
-          <img class="page-footer__image" src="#" alt="Pink-logo">
-        </a>
-      </div>
-      <div class="page-footer__social social">
-        <a href="#" class="social__btn social__btn--twitter"><span class="visually-hidden">Твиттер</span></a>
-        <a href="#" class="social__btn social__btn--facebook"><span class="visually-hidden">Фейсбук</span></a>
-        <a href="#" class="social__btn social__btn-youtube"><span class="visually-hidden">Ютубе</span></a>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="#">Разработано</a>
+    <footer class="page-footer page-footer--index-mobile-none">
+      <div class="contetnt-wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__link" href="index.html">Pink
+            <img class="page-footer__image" src="#" alt="Pink-logo">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <a href="#" class="social__btn social__btn--twitter"><span class="visually-hidden">Твиттер</span></a>
+          <a href="#" class="social__btn social__btn--facebook"><span class="visually-hidden">Фейсбук</span></a>
+          <a href="#" class="social__btn social__btn-youtube"><span class="visually-hidden">Ютубе</span></a>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="#">Разработано</a>
+        </div>
       </div>
     </footer>
   </body>

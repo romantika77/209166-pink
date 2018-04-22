@@ -1,4 +1,35 @@
 .page-header {
+  position: relative;
   color: #ffffff;
   background-color: @background-color;
+}
+
+.page-header__toggle {
+  position: absolute;
+  width: 24px;
+  height: 23px;
+  // background: none;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    .content-wrapper {
+      display: flex;
+    }
+  }
+
+  .page-header__logo {
+    width: 150px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__navigation {
+    width: 790px;
+  }
 }

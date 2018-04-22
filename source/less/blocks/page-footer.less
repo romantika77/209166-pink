@@ -1,5 +1,13 @@
 .page-footer {
-  &--only-index-mobile {
+  &--index-mobile-none {
     display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    &--index-mobile-none {
+      display: block;
+    }
   }
 }
