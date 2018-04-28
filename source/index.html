@@ -63,44 +63,110 @@
             <p class="adv__title adv__title--title2">Нам есть, что вам предложить!</p>
           </div>
           <div class="adv__container">
-            <div class="adv__item adv__item--item1">
-              <h2 class="adv__caption">Поднимает настроение</h2>
-              <p class="adv__desk">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </div>
-            <div class="adv__item adv__item--item2">
-              <h2 class="adv__caption">Меняет мир вокруг!</h2>
-              <p class="adv__desk">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </div>
-            <div class="adv__item adv__item--item3">
+            <div class="adv__text-container">
+              <div class="adv__item adv__item--item1">
+                <h2 class="adv__caption">Поднимает настроение</h2>
+                <p class="adv__desk">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </div>
+              <div class="adv__item adv__item--item2">
+                <h2 class="adv__caption">Меняет мир вокруг!</h2>
+                <p class="adv__desk">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </div>
+              <div class="adv__item adv__item--item3">
               <h2 class="adv__caption">Заводит новых друзей</h2>
               <p class="adv__desk">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
+            </div>
+            <div class="adv__picture-container">
+              <div class="adv__picture adv__picture--picture1">
+                <img class="adv__image adv__image--image1" src="img/iphone-screen-mobile@1x.png" alt="Iphone screen" >
+              </div>
+              <div class="adv__picture adv__picture--picture2">
+                <img class="adv__image adv__image--image2" src="img/iphone-screen-mobile@1x.png" alt="Iphone screen">
+              </div>
+              <div class="adv__picture adv__picture--picture3">
+                <img class="adv__image adv__image--image3" src="img/iphone-screen-mobile@1x.png" alt="Iphone screen">
+              </div>
+            </div>
+          </div>
+          <section class="effect">
+            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <p class="effect__desk">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__more" href="page1.html">Узнать больше об исследовании</a>
+          </section>
             <section class="reviews">
+              <input class="reviews__input" type="radio" id="btn1">
+              <input class="reviews__input" type="radio" id="btn3">
+              <input class="reviews__input" type="radio" id="btn3">
               <h2 class="visually-hidden">Отзывы</h2>
               <div class="reviews__item reviews__item--item1">
-                <p class="reviews__name">Николай Петров</p>
+                <p class="reviews__name">Николай Петров <span class="reviews__feature">25 лет, водитель трамвая</span></p>
                 <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
               </div>
-              <div class="reviews__item reviews__item--item1">
-                <p class="reviews__name"></p>
-                <p class="reviews__text"></p>
+              <div class="reviews__item reviews__item--item2">
+                <p class="reviews__name">Василий Андреев <span class="reviews__feature">42 года, бывший военный</span></p>
+                <p class="reviews__text">Это приложение вернуло меня к жизни после тяжелой аварии. И пробудило вкус к жизни!</p>
               </div>
-              <div class="reviews__item reviews__item--item1">
-                <p class="reviews__name"></p>
-                <p class="reviews__text"></p>
+              <div class="reviews__item reviews__item--item2">
+                <p class="reviews__name">Елизавета Смирнова <span class="reviews__feature">35 лет, руководитель проекта</span></p>
+                <p class="reviews__text">Благодаря этому приложению я наконец смогла поменять работу и место жительства!</p>
               </div>
+              <label for="btn1" class="review__label"><span class="visually-hidden">1</span></label>
+              <label for="btn2" class="review__label"><span class="visually-hidden">2</span></label>
+              <label for="btn3" class="review__label"><span class="visually-hidden">3</span></label>
             </section>
-            <table>
-              <tr>
-                <th>Стандарт 3,99 USD</th>
-                <td>Розовый фильтр</td>
-                <td>Смайлики</td>
-                <td>Комментарии</td>
-              </tr>
-            </table>
-          </div>
         </div>
       </div>
+      <section class="tariff">
+        <h2 class="tariff__title visually-hidden">Тарифы</h2>
+        <input class="tariff__input visually-hidden" type="radio" id="tariff1" name="tariff-toggle">
+        <input class="tariff__input visually-hidden" type="radio" id="tariff2" name="tariff-toggle" checked>
+        <input class="tariff__input visually-hidden" type="radio" id="tariff3" name="tariff-toggle">
+        <div class="tariff__container">
+          <table class="tariff__table">
+            <thead class="tariff__head">
+              <tr>
+                <td class="tariff__data tariff__data--empty tariff__data--sign"></td>
+                <td class="tariff__data tariff__data--heading">
+                  <p class="tariff__name">База</p>
+                  <p class="tariff__cost">1,99 USD</p>
+                </td>
+                <td class="tariff__data tariff__data--heading tariff__data--hit">
+                  <p class="tariff__name">Стандарт</p>
+                  <p class="tariff__cost">3,99 USD</p>
+                </td>
+                <td class="tariff__data tariff__data--heading">
+                  <p class="tariff__name">Анлим</p>
+                  <p class="tariff__cost">9,99 USD</p>
+                </td>
+              </tr>
+            </thead>
+            <tr>
+              <td class="tariff__data tariff__data--filter tariff__data--sign">Розовый фильтр</td>
+              <td class="tariff__data tariff__data--filter tariff__data--on"><span class="tariff__cell">Розовый фильтр</span></td>
+              <td class="tariff__data tariff__data--filter tariff__data--on"><span class="tariff__cell">Розовый фильтр</span></td>
+              <td class="tariff__data tariff__data--filter tariff__data--on"><span class="tariff__cell">Розовый фильтр</span></td>
+            </tr>
+            <tr>
+              <td class="tariff__data tariff__data--smile tariff__data--sign">Смайлики</td>
+              <td class="tariff__data tariff__data--smile tariff__data--off"><span class="tariff__cell">Смайлики</span></td>
+              <td class="tariff__data tariff__data--smile tariff__data--on"><span class="tariff__cell">Смайлики</span></td>
+              <td class="tariff__data tariff__data--smile tariff__data--on"><span class="tariff__cell">Смайлики</span></td>
+            </tr>
+            <tr>
+              <td class="tariff__data tariff__data--comment tariff__data--sign">Комментарии</td>
+              <td class="tariff__data tariff__data--comment tariff__data--off"><span class="tariff__cell">Комментарии</span></td>
+              <td class="tariff__data tariff__data--comment tariff__data--off"><span class="tariff__cell">Комментарии</span></td>
+              <td class="tariff__data tariff__data--comment tariff__data--on"><span class="tariff__cell">Комментарии</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="tariff__toggles">
+           <label for="tariff1" class="tariff__label"><span class="visually-hidden">1</span></label>
+          <label for="tariff2" class="tariff__label"><span class="visually-hidden">2</span></label>
+          <label for="tariff3" class="tariff__label"><span class="visually-hidden">3</span></label>
+        </div>
+      </section>
       <section class="contacts">
         <div class="content-wrapper">
           <h2 class="visually-hidden">Контакты</h2>

@@ -2,3 +2,52 @@
   color: @base-color;
   background-color: @silver-color;
 }
+
+.adv__picture {
+  &--picture1,
+  &--picture2 {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .adv__container {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    .adv__picture-container {
+    order: -1;
+  }
+
+  .adv__picture--picture3 {
+    // order: -1;
+  }
+
+  .adv__item {
+    width: 310px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .adv__container {
+    width: 940px;
+  }
+
+  .adv__text-container {
+    display: flex;
+  }
+
+  .adv__picture-container {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .adv__picture {
+      display: block;
+      width: 200px;
+    }
+  }
