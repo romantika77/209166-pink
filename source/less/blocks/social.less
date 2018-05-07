@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__btn {
+  width: 46px;
+  height: 46px;
+  margin-right: 13px;
+  line-height: 46px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border: 3px solid @base-color;
+  }
+
+  &:active {
+     border: 3px solid rgba(40, 54, 69, 0.1);
+  }
+}
+
+.social__icon {
+   fill: @alarm-color;
+}

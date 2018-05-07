@@ -1,5 +1,38 @@
 .map {
+  // position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 200px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-color: #eae6dd;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.map__decoration {
+  position: relative;
+}
+
+.map__triangle {
+  position: absolute;
+  top: -14px;
+  width: 100%;
+  fill: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .map__decoration {
+    // width: 100%;
+  }
+
+  .map__triangle {
+    // width: 660px;
+    top: 0;
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

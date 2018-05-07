@@ -1,0 +1,196 @@
+.filter__title {
+  width: 253px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
+}
+
+.filter__picture {
+  width: 320px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  background-color: @silver-color;
+}
+
+.filter__figures {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter__item {
+  &--crop {
+    width: 44px;
+  }
+
+  &--fill {
+    width: 48px;
+  }
+
+  &--contrast {
+    width: 32px;
+  }
+}
+
+.filter__icon {
+  fill: @base-color;
+  opacity: 0.3;
+
+  &--active {
+    fill: @alarm-color;
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: @alarm-color;
+    opacity: 1;
+  }
+}
+
+.filter__range:not(.filter__range--active) {
+  display: none;
+}
+
+.filter__range {
+  position: relative;
+  padding-bottom: 34px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    width: 320px;
+    height: 2px;
+    background-color: @base-color;
+    opacity: 0.1;
+  }
+}
+
+.filter__scale {
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: @base-color;
+}
+
+.filter__toggle {
+  position: absolute;
+  top: -7px;
+  right: 50px;
+  z-index: 10;
+  width: 14px;
+  height: 15px;
+  background-color: #ffffff;
+  border: 2px solid @alarm-color;
+  border-radius: 50%;
+}
+
+.filter__button {
+  .font-bold();
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px 20px;
+  color: @alarm-color;
+  font-size: 18px;
+  line-height: 18px;
+  border: none;
+  background-color: transparent;
+  border: 3px solid @alarm-color;
+  border-radius: 30px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: @alarm-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @alarm-color;
+  }
+
+  &--cancel {
+    color: @base-color;
+    border: 3px solid @base-color;
+    opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+      color: @base-color;
+      background-color: transparent;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: @base-color;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.filter__bar {
+  margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .filter__title {
+    width: 430px;
+    font-size: 18px;
+  }
+
+  .filter__picture {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+  }
+
+  .filter__controls {
+    display: flex;
+    flex-wrap: wrap;
+    width: 275px;
+  }
+
+  .filter__range:not(.filter__range--active) {
+    display: block;
+  }
+
+  .filter__image {
+    width: 300px;
+    margin-right: 43px;
+  }
+
+  .filter__figures {
+    width: 30px;
+    /*align-self: flex-start;*/
+    background-color: pink;
+  }
+
+  .filter__keys {
+    /*align-self: flex-start;*/
+  flex-grow: 1;
+    background-color: tan;
+  }
+
+  .filter__icon {
+    &--crop {
+      width: 22px;
+      height: 22px;
+      background-color: red;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

@@ -1,16 +1,18 @@
 .contacts {
+  margin: 0;
+  padding: 0;
   text-align: center;
   // background-color: pink;
   .content-wrapper {
     // background-color: tan;
   }
 }
+
 .contacts__info {
   .font-light();
   display: block;
   color: @alarm-color;
   font-size: 24px;
-  font-weight: 300;
 }
 
 .contacts__act {
@@ -26,7 +28,14 @@
   font-size: 24px;
   line-height: 30px;
   color: @base-color;
-  font-weight: 300;
+}
+
+.contacts__container {
+  p {
+    // margin: 0;
+    // padding: 0;
+    // margin-bottom: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -42,6 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     p {
       width: 280px;
     }
@@ -57,5 +67,3 @@
     flex-grow: 0;
   }
 }
-
-
