@@ -1,3 +1,8 @@
+.review-form__contaniner {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .review-form__legend {
   text-transform: uppercase;
   color: @alarm-color;
@@ -7,5 +12,212 @@
   &--alotted {
     color: @alarm-color;
     text-transform: uppercase;
+  }
+}
+
+.review-form__fieldset {
+  &--name,
+  &--progress,
+  &--contacts,
+  &--application,
+  &--impress {
+    border: none;
+  }
+}
+
+.review-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.review-form__input {
+  width: 100%;
+  color: @base-color;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 11px 20px;
+  border: 2px solid #e5e5e5;
+}
+
+.review-form__button {
+  .font-bold();
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #2aab6d;
+  border: none;
+}
+
+.review-form__mark {
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.review-form__asterisk {
+  color: @alarm-color;
+}
+
+@media (min-width: @tablet-width) {
+  .review-form__contaniner {
+    width: 620px;
+  }
+
+  .review-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review-form__item {
+    &--name {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  .review-form__fieldset {
+    &--contacts,
+    &--impress {
+      padding: 40px 60px;
+    }
+  }
+
+  .review-form__input {
+    &--name {
+      flex-grow: 1;
+      min-width: 200px;
+      margin-left: 22px;
+    }
+
+    &--contacts {
+      width: 100%;
+      order: -1;
+    }
+
+    &--impress {
+      width: 100%;
+    }
+  }
+
+  .review-form__label {
+    &--name {
+      flex-shrink: 0;
+    }
+  }
+
+  .review-form__contaniner {
+    &--item1 {
+      order: -6;
+    }
+
+    &--item4 {
+      order: -5;
+    }
+
+    &--item3 {
+      order: -4;
+    }
+
+    &--item6 {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 70px;
+    }
+  }
+
+  .review-form__fieldset {
+    &--application,
+    &--contacts,
+    &--progress,
+    &--impress {
+      border: 2px solid #e5e5e5;
+    }
+  }
+
+  .review-form__legend {
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .review-form__button {
+    width: 296px;
+  }
+
+  .review-form__mark {
+    width: 192px;
+    margin: 0;
+  }
+}
+
+@media (max-width: @tablet-width-only) {
+  .review-form__only-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review-form__contaniner {
+    width: 940px;
+
+    &--item1 {
+      width: 435px;
+    }
+
+    &--item4 {
+      width: 431px;
+    }
+
+    &--item3 {
+      // display: flex;
+    }
+  }
+
+  .review-form__list {
+    &--contacts {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--progress {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .review-form__item {
+    &--contacts {
+      width: 371px;
+    }
+
+    &--progress {
+      width: 260px;
+    }
+  }
+
+  .review-form__input {
+    &--impress {
+      height: 124px;
+      // background-color: pink;
+    }
+  }
+
+  .review-form__mark {
+    width: 315px;
   }
 }

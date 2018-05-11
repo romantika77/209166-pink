@@ -1,0 +1,41 @@
+.feedback-form__title {
+  .font-light();
+  width: 230px;
+  margin: 0 auto;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: @base-color;
+  text-align: center;
+}
+
+.feedback-form__text {
+  width: 281px;
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-form__title {
+    width: 480px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .feedback-form__text {
+    width: 490px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-form__title {
+    width: 750px;
+  }
+
+  .feedback-form__text {
+    width: 760px;
+  }
+
+}
