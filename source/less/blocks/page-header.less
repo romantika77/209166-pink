@@ -7,13 +7,10 @@
 .page-header__container {
   width: 280px;
   margin: 0 auto;
-  /*padding: 13px 20px;*/
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 18px;
   display: flex;
   justify-content: space-between;
-  /*background-color: grey;*/
-  // box-shadow: 0 1px 0 #000000;
 }
 
 .page-header__toggle {
@@ -47,14 +44,23 @@
 @media (min-width: @tablet-width) {
   .page-header__container {
     width: 620px;
+    padding-top: 27px;
+    padding-bottom: 42px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    // background-color: rgba(0, 0, 0, 0.3);
+  }
   .page-header .page-header__wrapper {
     display: flex;
+    align-items: center;
     width: 940px;
     margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    // background-color: tan;
   }
 
   .page-header__logo {

@@ -1,8 +1,124 @@
 .application {
+  padding-top: 421px;
+  padding-bottom: 17px;
   color: #ffffff;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg") ;
   background-repeat: no-repeat;
-  background-color: @background-color;
-  background-position: center;
-  background-size: auto;
+  background-color: #1d2631;
+  background-position: 0 110px, 0 -50px;
+  background-size: auto, 100% 447px;
+}
+
+.application__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.application__button {
+  .font-bold();
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 33px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  text-align: center;
+  background-color: transparent;
+
+  &:hover {
+    color: @alarm-color;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.application__text {
+  .font-light();
+  text-align: center;
+}
+
+@media (max-width: @mobile-width-only) {
+  .application__tagline {
+    display: none;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .application {
+    padding-top: 53px;
+    padding-bottom: 92px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: bottom, center 0;
+  }
+
+  .application__container {
+    width: 620px;
+  }
+
+  .application__tagline {
+    .font-light();
+    width: 190px;
+    margin-left: 55px;
+    margin-bottom: 23px;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .application__button {
+    width: 300px;
+    margin-bottom: 46px;
+  }
+
+  .application__list {
+    width: 300px;
+  }
+
+  .application__text {
+    width: 300px;
+    margin-top: 29px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application {
+    padding-top: 60px;
+    padding-bottom: 103px;
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: 170px bottom, center 0;
+  }
+
+  .application__tagline {
+    width: 235px;
+    margin-left: 32px;
+    margin-bottom: 52px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .application__container {
+    width: 940px;
+    // background-color: pink;
+  }
+
+  .application__button {
+    margin-bottom: 70px;
+    font-size: 21px;
+  }
+
+  .application__text {
+    margin-top: 45px;
+  }
 }
