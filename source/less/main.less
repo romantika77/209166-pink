@@ -36,6 +36,12 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: @mobile-width-only) {
+  .besides-mobile {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .content-wrapper {
     width: 620px;
@@ -45,5 +51,9 @@ body {
 @media (min-width: @desktop-width) {
   .content-wrapper {
     width: 940px;
+  }
+
+  .tablet-only {
+    display: none;
   }
 }
