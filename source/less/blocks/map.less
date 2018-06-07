@@ -1,8 +1,8 @@
 .map {
-  // position: relative;
+  position: relative;
   margin: 0;
   padding: 0;
-  min-height: 200px;
+  min-height: 201px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-color: #eae6dd;
   background-repeat: no-repeat;
@@ -11,28 +11,63 @@
 }
 
 .map__decoration {
-  position: relative;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  // max-height: 70px;
 }
 
 .map__triangle {
   position: absolute;
-  top: -14px;
+  top: 0;
   width: 100%;
+  height: 40px;
+  // background-color: tan;
   fill: #ffffff;
 }
 
+.map__picture {
+  width: 100%;
+  height: 201px;
+}
+
+
 @media (min-width: @tablet-width) {
+  .map {
+    height: 393px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+
   .map__decoration {
-    // width: 100%;
+    width: 100%;
   }
 
   .map__triangle {
-    // width: 660px;
+    position: absolute;
     top: 0;
+    width: 100%;
+    height: 90px;
     fill: #ffffff;
+  }
+
+  .map__picture {
+    height: 393px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .map {
+    height: 520px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
 
+  .map__triangle {
+    height: 120px;
+  }
+
+  .map__picture {
+    height: 520px;
+  }
 }
