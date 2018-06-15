@@ -2,14 +2,36 @@
   overflow: hidden;
 }
 
-.gallery__title {
-  .font-light();
-  font-size: 24px;
+.gallery__caption-box {
+  padding-top: 30px;
+  padding-bottom: 80px;
   color: #ffffff;
-  background-color: @background-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: @base-color;
+  background-size: cover;
+  background-position: 0 -70px;
+  text-align: center;
 }
 
-.gallery__intro {
+.gallery__title {
+  .font-light();
+  width: 175px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.gallery__adv-box {
+  padding-top: 45px;
+  padding-bottom: 49px;
+  text-align: center;
+}
+
+.gallery__promo {
+  width: 245px;
+  margin: 0 auto;
   line-height: 30px;
 }
 
@@ -21,10 +43,39 @@
 .gallery__item {
   margin-bottom: 20px;
   background-color: @silver-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .gallery__desk {
   padding: 10px 17px;
+  padding-bottom: 19px;
+}
+
+.gallery__item {
+  &--panorama {
+    position: relative;
+
+    &::before {
+      .font-bold();
+      position: absolute;
+      content: "Панорама дня";
+      top: 0;
+      right: 0;
+      z-index: 10;
+      width: 140px;
+      height: 36px;
+      font-size: 12px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: @alarm-color;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
 }
 
 .gallery__image {
@@ -36,14 +87,38 @@
   }
 }
 
+.gallery__photo {
+  // background-color: pink;
+}
+
+.gallery__text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .gallery__author {
   .font-bold();
 }
 
 .gallery__like {
+  position: relative;
+  padding-left: 33px;
   font-size: 12px;
+  line-height: 24px;
   color: @alarm-color;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url(../img/icons/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .gallery__time {
@@ -53,19 +128,36 @@
 }
 
 @media (min-width: @tablet-width) {
+  .gallery__caption-box {
+    padding-top: 70px;
+    padding-bottom: 140px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto;
+    background-position: -260px -110px;
+  }
+
   .gallery__title {
+    width: 350px;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
     text-align: center;
   }
 
   .gallery__intro {
-    width: 440px;
     margin: 0 auto;
     padding: 0;
     font-size: 18px;
     text-align: center;
     // background-color: pink;
+  }
+
+  .gallery__adv-box {
+    padding-top: 90px;
+    padding-bottom: 77px;
+  }
+
+  .gallery__promo {
+    width: 440px;
   }
 
   .gallery__container {
@@ -74,12 +166,29 @@
     flex-wrap: wrap;
   }
 
+  .gallery__image {
+    &--panorama {
+      height: 509px;
+    }
+  }
+
   .gallery__item {
     width: 300px;
+    margin-bottom: 21px;
+
+    &:nth-last-child(2),
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &--panorama {
       width: 620px;
       margin-bottom: 50px;
+      // padding-bottom: 10px;
+
+      &::before {
+        top: 57px;
+      }
     }
 
     &:nth-of-type(2n) {
@@ -88,7 +197,43 @@
   }
 
   .gallery__desk {
-    padding: 26px 24px;
+    position: relative;
+    padding: 16px 26px;
+    padding-bottom: 7px;
+  }
+
+  .gallery__desk:not(.gallery__desk--panorama) {
+    padding-bottom: 20px;
+  }
+
+  .gallery__text {
+    min-height: 56px;
+  }
+
+  .gallery__text:not(.gallery__text--panorama) {
+    margin-bottom: 5px;
+  }
+
+  .gallery__like {
+    padding-left: 0;
+    padding-right: 149px;
+
+    &::before {
+      top: 1px;
+      left: 230px;
+    }
+
+    &--panorama {
+      position: absolute;
+      top: 19px;
+      right: 26px;
+      padding-right: 33px;
+
+      &::before {
+        top: 5px;
+        left: 107px;
+      }
+    }
   }
 }
 
@@ -97,8 +242,25 @@
     width: 940px;
   }
 
+  .gallery__caption-box {
+    padding-top: 65px;
+    padding-bottom: 100px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -690px -110px;
+  }
+
+  .gallery__promo {
+    width: 572px;
+    // background-color: pink;
+  }
+
+  .gallery__adv-box {
+    padding-bottom: 88px;
+  }
+
   .gallery__item {
     margin-right: 20px;
+    margin-bottom: 52px;
 
     &:nth-of-type(3n + 1) {
       margin-right: 0;
@@ -108,4 +270,24 @@
       width: 940px;
     }
   }
+
+  .gallery__image {
+
+    &--panorama {
+      height: 506px;
+    }
+  }
+
+  .gallery__like {
+    &--panorama {
+      right: 31px;
+    }
+  }
+
+  .gallery__text {
+    &--panorama {
+      min-height: 32px;
+    }
+  }
 }
+

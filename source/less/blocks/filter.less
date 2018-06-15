@@ -1,6 +1,7 @@
 .filter__title {
-  width: 253px;
+  width: 256px;
   margin: 0 auto;
+  padding: 43px 0;
   text-align: center;
   line-height: 30px;
 }
@@ -9,27 +10,36 @@
   width: 320px;
   margin: 0 auto;
   padding: 18px 20px;
+  padding-bottom: 30px;
   background-color: @silver-color;
+}
+
+.filter__controls {
 }
 
 .filter__figures {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 34px;
+  padding-bottom: 30px;
 }
 
 .filter__item {
   &--crop {
     width: 44px;
+    margin-left: auto;
   }
 
   &--fill {
     width: 48px;
+    margin-left: 36px;
+    margin-right: 41px;
   }
 
   &--contrast {
     width: 32px;
+    margin-right: auto;
   }
 }
 
@@ -95,7 +105,7 @@
   display: block;
   width: 100%;
   margin-bottom: 12px;
-  padding: 12px 20px;
+  padding: 15px 20px;
   color: @alarm-color;
   font-size: 18px;
   line-height: 18px;
@@ -140,6 +150,7 @@
 @media (min-width: @tablet-width) {
   .filter__title {
     width: 430px;
+    padding: 67px 0;
     font-size: 18px;
   }
 
@@ -147,12 +158,20 @@
     display: flex;
     flex-wrap: wrap;
     width: 660px;
+    padding: 57px 20px;
+    padding-bottom: 47px;
   }
 
   .filter__controls {
     display: flex;
     flex-wrap: wrap;
     width: 275px;
+    // padding: 0;
+    // background-color: tan;
+  }
+
+  .filter__item {
+    margin: 0;
   }
 
   .filter__range:not(.filter__range--active) {
@@ -166,31 +185,54 @@
 
   .filter__figures {
     width: 30px;
-    /*align-self: flex-start;*/
-    background-color: pink;
+    padding: 0;
+    padding-top: 8px;
+    padding-left: 5px;
+    justify-content: flex-start;
+    // align-items: flex-start;
+    align-self: flex-start;
+    background-color: plum;
   }
 
   .filter__keys {
     /*align-self: flex-start;*/
-  flex-grow: 1;
+    flex-grow: 1;
+    // background-color: tan;
+  }
+
+  .filter__bar {
+    background-color: pink;
+  }
+
+  .filter__range {
+    // padding-top: 16px;
+    padding-bottom: 62px;
+    // margin-bottom: 20px;
     background-color: tan;
   }
 
   .filter__icon {
+    fill: @alarm-color;
+    opacity: 1;
     &--crop {
-      width: 22px;
-      height: 22px;
-      background-color: red;
+      width: 24px;
+      height: 24px;
+      // margin: 0;
+      // margin-left: 0;
+      margin-bottom: 14px;
     }
 
     &--fill {
-      width: 24px;
-      height: 22px;
+      width: 27px;
+      height: 25px;
+      // margin: 0;
+      margin-bottom: 8px;
     }
 
     &--contrast {
       width: 16px;
       height: 16px;
+      margin-left: 5px;
     }
   }
 }
