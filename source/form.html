@@ -33,10 +33,12 @@
     </div>
   </header>
   <main class="feedback-form">
-    <h1 class="feedback-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    <div class="feedback-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</div>
+    <div class="feedback-form__caption-box">
+      <h1 class="feedback-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+    <div class="feedback-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту! <span class="besides-mobile">Пожалуйста, заполните форму ниже:</span></div>
     <form action="https://echo.htmlacademy.ru" class="review-form" method="get">
-      <div class="review-form__contaniner review-form__contaniner--item1">
+      <div class="review-form__contaniner review-form__container--name">
         <fieldset class="review-form__fieldset review-form__fieldset--name">
           <legend class="review-form__legend"><span class="visually-hidden">Контакты</span></legend>
           <ul class="review-form__list">
@@ -55,40 +57,40 @@
           </ul>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__contaniner--item2">
+      <div class="review-form__contaniner review-form__container--progress">
         <fieldset class="review-form__fieldset review-form__fieldset--progress">
-        <legend class="review-form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <legend class="review-form__legend review-form__legend--progress">Ваши безбашенные достижения в путешествии</legend>
         <ul class="review-form__list review-form__list--progress">
           <li class="review-form__item review-form__item--progress">
-            <input type="checkbox" name="selfie" id="checkbox-1" checked>
-            <label for="checkbox-1">Сделал селфи с акулой</label>
+            <input class="review-form__input review-form__input--check visually-hidden" type="checkbox" name="selfie" id="checkbox-1" checked>
+            <label class="review-form__label review-form__label--check" for="checkbox-1">Сделал селфи с акулой</label>
           </li>
           <li class="review-form__item review-form__item--progress">
-            <input type="checkbox" name="beach" id="checkbox-2" checked>
-            <label for="checkbox-2">Обгорел на пляже</label>
+            <input class="review-form__input review-form__input--check visually-hidden" type="checkbox" name="beach" id="checkbox-2" checked>
+            <label class="review-form__label review-form__label--check" for="checkbox-2">Обгорел на пляже</label>
           </li>
           <li class="review-form__item review-form__item--progress">
-            <input type="checkbox" name="norris" id="checkbox-3">
-            <label for="checkbox-3">Видел Чака Норриса</label>
+            <input class="review-form__input review-form__input--check visually-hidden" type="checkbox" name="norris" id="checkbox-3">
+            <label class="review-form__label review-form__label--check" for="checkbox-3">Видел Чака Норриса</label>
           </li>
           <li class="review-form__item review-form__item--progress">
-            <input type="checkbox" name="souvenirs" id="checkbox-4">
-            <label for="checkbox-4">Накупил сувениров</label>
+            <input class="review-form__input review-form__input--check visually-hidden" type="checkbox" name="souvenirs" id="checkbox-4">
+            <label class="review-form__label review-form__label--check" for="checkbox-4">Накупил сувениров</label>
           </li>
           <li class="review-form__item review-form__item--progress">
-            <input type="checkbox" name="tower" id="checkbox-5" checked>
-            <label for="checkbox-5">Удержал башню</label>
+            <input class="review-form__input review-form__input--check visually-hidden" type="checkbox" name="tower" id="checkbox-5" checked>
+            <label class="review-form__label review-form__label--check" for="checkbox-5">Удержал башню</label>
           </li>
           <li class="review-form__item review-form__item--progress">
-            <input type="checkbox" name="hotel" id="checkbox-6">
-            <label for="checkbox-6">Разгромил отель</label>
+            <input class="review-form__input review-form__input--check visually-hidden" type="checkbox" name="hotel" id="checkbox-6">
+            <label class="review-form__label review-form__label--check" for="checkbox-6">Разгромил отель</label>
           </li>
         </ul>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__contaniner--item3">
+      <div class="review-form__contaniner review-form__container--contacts">
         <fieldset class="review-form__fieldset review-form__fieldset--contacts">
-          <legend class="review-form__legend">Контактная информация</legend>
+          <legend class="review-form__legend besides-mobile">Контактная информация</legend>
           <ul class="review-form__list review-form__list--contacts">
             <li class="review-form__item review-form__item--contacts">
               <label class="review-form__label review-form__label--alotted" for="phone-field">Номер телефона</label>
@@ -101,32 +103,32 @@
           </ul>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__contaniner--item4">
+      <div class="review-form__contaniner review-form__container--application">
         <fieldset class="review-form__fieldset review-form__fieldset--application">
-          <legend class="review-form__legend">С каким приложением путешествовали?</legend>
+          <legend class="review-form__legend review-form__legend--application">С каким приложением путешествовали?</legend>
           <ul class="review-form__list">
-            <li class="review-form__item">
-              <label for="radio-1">Pink для iOS</label>
-              <input class="visually-hidden" type="radio" name="application" id="radio-1" value="ios" checked>
+            <li class="review-form__item review-form__item--application">
+              <input class="review-form__input review-form__input--radio visually-hidden" type="radio" name="application" id="radio-1" value="ios" checked>
+              <label class="review-form__label review-form__label--radio" for="radio-1">Pink для iOS</label>
             </li>
-            <li class="review-form__item">
-              <label for="radio-2">Pink на Android</label>
-              <input class="visually-hidden" type="radio" name="application" id="radio-2" value="android">
-            </li>
-            <li class="review-form__item">
-              <label for="radio-3">Windows Phone</label>
-              <input class="visually-hidden" type="radio" name="application" id="radio-3" value="windows">
-            </li>
+            <li class="review-form__item review-form__item--application">
+              <input class="review-form__input review-form__input--radio visually-hidden" type="radio" name="application" id="radio-2" value="android">
+              <label class="review-form__label review-form__label--radio" for="radio-2">Pink на Android</label>
+           </li>
+            <li class="review-form__item review-form__item--application">
+              <input class="review-form__input review-form__input--radio visually-hidden" type="radio" name="application" id="radio-3" value="windows">
+              <label class="review-form__label review-form__label--radio" for="radio-3">Windows Phone</label>
+           </li>
           </ul>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__contaniner--item5">
+      <div class="review-form__contaniner review-form__container--impress">
         <fieldset class="review-form__fieldset review-form__fieldset--impress">
-          <legend class="review-form__legend">Опишите свои эмоции</legend>
+          <legend class="review-form__legend review-form__legend--impress">Опишите свои эмоции</legend>
           <textarea class="review-form__input review-form__input--impress" name="comment" id="comment-field" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__contaniner--item6">
+      <div class="review-form__contaniner review-form__container--submit">
         <button class="review-form__button">Отправить форму</button>
         <span class="review-form__mark" ><span class="review-form__asterisk">*</span> &#8212; обязательные <span class="review-form__only-desktop">для заполнения</span> поля</span>
       </div>
