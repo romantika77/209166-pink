@@ -38,10 +38,10 @@
     </div>
     <div class="feedback-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту! <span class="besides-mobile">Пожалуйста, заполните форму ниже:</span></div>
     <form action="https://echo.htmlacademy.ru" class="review-form" method="get">
-      <div class="review-form__contaniner review-form__container--name">
+      <div class="review-form__container review-form__container--name">
         <fieldset class="review-form__fieldset review-form__fieldset--name">
           <legend class="review-form__legend"><span class="visually-hidden">Контакты</span></legend>
-          <ul class="review-form__list">
+          <ul class="review-form__list review-form__list--name">
             <li class="review-form__item review-form__item--name">
               <label class="review-form__label review-form__label--alotted review-form__label--name" for="surname-field">Фамилия:</label>
               <input class="review-form__input review-form__input--name" type="text" name="surname" id="surname-field" required placeholder="Укажите фамилию *">
@@ -57,7 +57,7 @@
           </ul>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__container--progress">
+      <div class="review-form__container review-form__container--progress">
         <fieldset class="review-form__fieldset review-form__fieldset--progress">
         <legend class="review-form__legend review-form__legend--progress">Ваши безбашенные достижения в путешествии</legend>
         <ul class="review-form__list review-form__list--progress">
@@ -88,25 +88,25 @@
         </ul>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__container--contacts">
+      <div class="review-form__container review-form__container--contacts">
         <fieldset class="review-form__fieldset review-form__fieldset--contacts">
           <legend class="review-form__legend besides-mobile">Контактная информация</legend>
           <ul class="review-form__list review-form__list--contacts">
-            <li class="review-form__item review-form__item--contacts">
-              <label class="review-form__label review-form__label--alotted" for="phone-field">Номер телефона</label>
+            <li class="review-form__item review-form__item--contacts review-form__item--phone">
+              <label class="review-form__label review-form__label--alotted review-form__label--phone" for="phone-field">Номер телефона</label>
               <input class="review-form__input review-form__input--contacts" type="phone" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
             </li>
-            <li class="review-form__item review-form__item--contacts">
-              <label class="review-form__label review-form__label--alotted" for="email-field">Адрес почты</label>
+            <li class="review-form__item review-form__item--contacts review-form__item--email">
+              <label class="review-form__label review-form__label--alotted review-form__label--email" for="email-field">Адрес почты</label>
               <input class="review-form__input review-form__input--contacts" type="email" name="email" id="email-field" placeholder="Введите почту *" required>
             </li>
           </ul>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__container--application">
+      <div class="review-form__container review-form__container--application">
         <fieldset class="review-form__fieldset review-form__fieldset--application">
           <legend class="review-form__legend review-form__legend--application">С каким приложением путешествовали?</legend>
-          <ul class="review-form__list">
+          <ul class="review-form__list review-form__list--application">
             <li class="review-form__item review-form__item--application">
               <input class="review-form__input review-form__input--radio visually-hidden" type="radio" name="application" id="radio-1" value="ios" checked>
               <label class="review-form__label review-form__label--radio" for="radio-1">Pink для iOS</label>
@@ -122,13 +122,13 @@
           </ul>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__container--impress">
+      <div class="review-form__container review-form__container--impress">
         <fieldset class="review-form__fieldset review-form__fieldset--impress">
           <legend class="review-form__legend review-form__legend--impress">Опишите свои эмоции</legend>
           <textarea class="review-form__input review-form__input--impress" name="comment" id="comment-field" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
       </div>
-      <div class="review-form__contaniner review-form__container--submit">
+      <div class="review-form__container review-form__container--submit">
         <button class="review-form__button">Отправить форму</button>
         <span class="review-form__mark" ><span class="review-form__asterisk">*</span> &#8212; обязательные <span class="review-form__only-desktop">для заполнения</span> поля</span>
       </div>
