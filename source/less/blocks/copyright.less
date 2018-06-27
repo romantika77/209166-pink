@@ -17,7 +17,6 @@
 }
 
 .copyright__logo {
-  /*position: absolute;*/
   fill: @alarm-color;
 
   &:hover {
@@ -26,5 +25,17 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    width: 390px;
+    text-align: right;
+  }
+
+  .copyright__text {
+    margin-right: 15px;
+    font-size: 18px;
   }
 }

@@ -112,6 +112,14 @@
   border: 2px solid @alarm-color;
 }
 
+.review-form__input:hover {
+  border-color: @base-color;
+}
+
+.review-form__input:active {
+  border-color: @alarm-color;
+}
+
 .review-form__fieldset {
   margin: 0;
   padding: 0;
@@ -199,6 +207,15 @@
   background-color: #2aab6d;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .review-form__mark {
@@ -243,14 +260,11 @@
     &--impress {
       padding-bottom: 35px;
       padding-top: 40px;
-      background-color: tan;
     }
 
     &--submit {
       display: flex;
       justify-content: space-between;
-      // padding-top: 24px;
-      background-color: pink;
     }
   }
 
@@ -324,6 +338,13 @@
   }
 
   .review-form__fieldset {
+    &--application,
+    &--contacts,
+    &--progress,
+    &--impress {
+      border: 2px solid #e5e5e5;
+    }
+
     &--contacts,
     &--impress {
       padding: 40px 60px;
@@ -391,25 +412,16 @@
     }
   }
 
-  .review-form__fieldset {
-    &--application,
-    &--contacts,
-    &--progress,
-    &--impress {
-      border: 2px solid #e5e5e5;
-    }
-  }
-
   .review-form__button {
     width: 296px;
-    margin-top: 24px;
+    margin-top: 31px;
   }
 
   .review-form__mark {
     align-self: center;
     width: 192px;
     margin: 0;
-    background-color: khaki;
+    text-align: right;
   }
 }
 
@@ -420,19 +432,56 @@
 }
 
 @media (min-width: @desktop-width) {
+  .review-form {
+    width: 940px;
+    margin: 0 auto;
+  }
+
   .review-form__container {
     width: 940px;
 
-    &--item1 {
-      width: 435px;
+    &--name {
+      width: 470px;
+      padding-top: 15px;
+      padding-right: 37px;
+      margin: 0;
     }
 
-    &--item4 {
-      width: 431px;
+    &--application {
+      width: 470px;
+      margin: 0;
+      padding: 0;
+      padding-left: 37px;
     }
 
-    &--item3 {
-      // display: flex;
+    &--contacts {
+      padding-top: 7px;
+    }
+
+    &--progress {
+      padding-top: 57px;
+    }
+
+    &--impress {
+      padding-bottom: 30px;
+    }
+  }
+
+  .review-form__fieldset {
+    &--contacts {
+      padding-top: 36px;
+    }
+
+    &--progress {
+      padding-bottom: 28px;
+    }
+  }
+
+  .review-form__legend {
+    &--contacts {
+      width: 270px;
+      padding-right: 32px;
+      padding-left: 32px;
     }
   }
 
@@ -445,16 +494,53 @@
     &--progress {
       display: flex;
       flex-wrap: wrap;
+      padding: 0;
+      padding-top: 7px;
+      padding-left: 58px;
+    }
+
+    &--application {
+      padding-top: 12px;
+      padding-left: 75px;
     }
   }
 
   .review-form__item {
     &--contacts {
       width: 371px;
+      margin-bottom: 17px;
     }
 
     &--progress {
       width: 260px;
+      margin-right: 56px;
+    }
+
+    &--item1 {
+      width: 260px;
+      order: -6;
+    }
+
+    &--item2 {
+      width: 260px;
+    }
+
+    &--item3 {
+      order: -5;
+      width: 240px;
+    }
+
+    &--item4 {
+      width: 240px;
+    }
+
+    &--item5 {
+      order: -4;
+      width: 210px;
+    }
+
+    &--item6 {
+      width: 210px;
     }
   }
 
