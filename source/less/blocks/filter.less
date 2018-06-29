@@ -43,6 +43,7 @@
 .filter__icon {
   fill: @base-color;
   opacity: 0.3;
+  cursor: pointer;
 
   &--active {
     fill: @alarm-color;
@@ -79,7 +80,6 @@
 }
 
 .filter__scale {
-  // position: absolute;
   width: 240px;
   height: 2px;
   margin: 0 auto;
@@ -96,6 +96,11 @@
   background-color: #ffffff;
   border: 2px solid @alarm-color;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background-color: @alarm-color;
+  }
 }
 
 .filter__button {

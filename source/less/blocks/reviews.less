@@ -9,9 +9,6 @@
   padding-top: 27px;
   padding-bottom: 18px;
   text-align: center;
-  &--item1 {
-    // display: block;
-  }
 }
 
 .reviews__name {
@@ -29,14 +26,12 @@
 }
 
 .reviews__toggles {
-  // position: absolute;
   min-height: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 140px;
-  // background-color: pink;
 }
 
 .reviews__label {
@@ -45,6 +40,7 @@
   margin-right: 18px;
   background-color: #bec3c7;
   border-radius: 50%;
+  cursor: pointer;
 
   &:last-child {
     margin-right: 0;
@@ -84,6 +80,35 @@
   display: block;
 }
 
+.reviews__input--input1:hover:not(:checked) ~ .reviews__toggles .reviews__label--label1 {
+  background-color: @base-color;
+  opacity: 0.6;
+}
+
+.reviews__input--input2:hover:not(:checked) ~ .reviews__toggles .reviews__label--label2 {
+  background-color: @base-color;
+  opacity: 0.6;
+}
+
+.reviews__input--input3:hover:not(:checked) ~ .reviews__toggles .reviews__label--label3 {
+  background-color: @base-color;
+  opacity: 0.6;
+}
+
+.reviews__input--input1:active:not(:checked) ~ .reviews__toggles .reviews__label--label1 {
+  background-color: @base-color;
+  opacity: 0.1;
+}
+
+.reviews__input--input2:active:not(:checked) ~ .reviews__toggles .reviews__label--label2 {
+  background-color: @base-color;
+  opacity: 0.1;
+}
+
+.reviews__input--input3:active:not(:checked) ~ .reviews__toggles .reviews__label--label3 {
+  background-color: @base-color;
+  opacity: 0.1;
+}
 
 @media (min-width: @tablet-width) {
   .reviews__feature {
@@ -96,24 +121,17 @@
     min-height: 350px;
     padding-top: 96px;
     padding-bottom: 14px;
-    // background-color: tan;
   }
 
   .reviews__name {
     font-size: 20px;
     line-height: 32px;
-    // background-color: pink;
   }
 
   .reviews__text {
     margin-bottom: 15px;
     font-size: 18px;
     line-height: 30px;
-    // background-color: pink;
-  }
-
-  .reviews__toggles {
-    // background-color: pink;
   }
 
   .reviews__input--input1:checked ~ .reviews__container .reviews__item--item1 {
@@ -142,10 +160,11 @@
   .reviews {
     position: relative;
   }
+
   .reviews__item {
+    display: none;
     position: relative;
     padding-top: 184px;
-      // background-color: pink;
 
     &::before {
       content: "";
@@ -154,10 +173,27 @@
       top: 72px;
       width: 79px;
       height: 63px;
-      background-image: url(../img/icon-quotes.svg);
+      background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
       opacity: 0.06;
     }
+  }
+
+  #show {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+  .reviews__input--input1:checked ~ .reviews__container .reviews__item--item1 {
+    display: none;
+  }
+
+  .reviews__input--input2:checked ~ .reviews__container .reviews__item--item2 {
+    display: none;
+  }
+
+  .reviews__input--input3:checked ~ .reviews__container .reviews__item--item3 {
+    display: none;
   }
 
   .reviews__text {
@@ -191,7 +227,7 @@
     transform: rotate(45deg);
     cursor: pointer;
 
-    &--prew {
+    &--prev {
       left: 5px;
       border-right: none;
       border-top: none;
