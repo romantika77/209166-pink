@@ -1,18 +1,20 @@
 .page-header {
-  position: relative;
+  position: absolute;
+  width: 100%;
   color: #ffffff;
-  background-color: @background-color;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__container {
   width: 280px;
   margin: 0 auto;
-  padding-top: 13px;
+  padding-top: 17px;
   padding-bottom: 18px;
   display: flex;
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .page-header__toggle {
   position: relative;
   width: 24px;
@@ -29,22 +31,134 @@
     height: 27px;
     width: 4px;
     background-color: #ffffff;
+=======
+@media (max-width: @tablet-width-only) {
+  .page-header--opened {
+    position: relative;
+    background-color: @background-color;
   }
 
-  &::before {
-    transform: rotate(45deg);
+  .page-header--nojs {
+    position: relative;
+    background-color: @background-color;
   }
 
-  &::after {
-    transform: rotate(-45deg);
+  .page-header__navigation--closed .page-header__list {
+    display: none;
+  }
+
+  .page-header__navigation--nojs {
+    .page-header__list {
+      display: block;
+    }
+  }
+
+  .page-header__toggle {
+    position: relative;
+    width: 24px;
+    height: 23px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      height: 30px;
+      width: 5px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .page-header__toggle--opened {
+    position: relative;
+    width: 49px;
+    &::before {
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 49px;
+      height: 4px;
+      background-color: #ffffff;
+      box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .page-header__toggle--nojs {
+    width: 24px;
+    height: 23px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      height: 27px;
+      width: 4px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      top: -3px;
+      left: 0px;
+      display: block;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .page-header__toggle:hover::before,
+  .page-header__toggle:hover::after {
+    background-color: @alarm-color;
+  }
+
+  .page-header__toggle:active::before,
+  .page-header__toggle:active::after {
+    background-color: @alarm-color;
+    opacity: 0.4;
+  }
+
+  .page-header__toggle--opened:hover::before {
+    box-shadow: 0 9px 0 0 @alarm-color, 0 18px 0 0 @alarm-color;
+  }
+
+  .page-header__toggle--opened:active::before {
+    box-shadow: 0 9px 0 0 @alarm-color, 0 18px 0 0 @alarm-color;
+    opacity: 0.4;
+>>>>>>> myAssembly
+  }
+
+  .page-header__toggle--nojs:hover::before {
+    box-shadow: none;
+  }
+
+  .page-header__toggle--nojs:active::before {
+    box-shadow: none;
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-header__container {
     width: 620px;
-    padding-top: 27px;
-    padding-bottom: 42px;
+    padding-top: 35px;
+    padding-bottom: 34px;
   }
 }
 
