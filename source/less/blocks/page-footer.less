@@ -27,6 +27,12 @@
   }
 }
 
+@media (max-width: @tablet-width-only) {
+  .page-footer__image--desktop {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
       display: block;
@@ -54,7 +60,7 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    padding-top: 112px;
+    padding-top: 72px;
   }
 
   .page-footer__social {
@@ -63,5 +69,9 @@
 
   .page-footer__copyright {
     width: 160px;
+  }
+
+  .page-footer__image--mobile {
+    display: none;
   }
 }

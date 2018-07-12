@@ -67,10 +67,8 @@ gulp.task("sprite", function () {
     inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(svgmin())
     .pipe(gulp.dest("build/img"));
 });
-
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
