@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  width: 100%;
+  min-width: 320px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -80,6 +80,7 @@
   .page-header__toggle--opened {
     position: relative;
     width: 49px;
+
     &::before {
       top: 0;
       left: 0;
@@ -98,6 +99,7 @@
   .page-header__toggle--nojs {
     width: 24px;
     height: 23px;
+
     &::before,
     &::after {
       content: "";
@@ -115,7 +117,7 @@
 
     &::after {
       top: -3px;
-      left: 0px;
+      left: 0;
       display: block;
       transform: rotate(-45deg);
     }

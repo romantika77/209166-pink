@@ -67,6 +67,7 @@
 .filter__range {
   position: relative;
   padding-bottom: 34px;
+
   &::after {
     content: "";
     position: absolute;
@@ -112,7 +113,6 @@
   color: @alarm-color;
   font-size: 18px;
   line-height: 18px;
-  border: none;
   background-color: transparent;
   border: 3px solid @alarm-color;
   border-radius: 30px;
@@ -165,14 +165,10 @@
     padding-bottom: 32px;
   }
 
-   .filter__controls {
+  .filter__controls {
     display: flex;
     flex-wrap: wrap;
     width: 275px;
-  }
-
-  .filter__item {
-    margin: 0;
   }
 
   .filter__range:not(.filter__range--active) {
@@ -194,6 +190,8 @@
   }
 
   .filter__item {
+    margin: 0;
+
     &--crop {
       margin-bottom: 45px;
     }
@@ -252,6 +250,7 @@
   .filter__icon {
     fill: @alarm-color;
     opacity: 1;
+
     &--crop {
       width: 24px;
       height: 24px;
@@ -260,8 +259,6 @@
     &--fill {
       width: 27px;
       height: 25px;
-      // margin: 0;
-      // margin-bottom: 8px;
     }
 
     &--contrast {
@@ -282,7 +279,6 @@
     padding-left: 80px;
     padding-right: 30px;
     padding-top: 45px;
-
   }
 
   .filter__image {

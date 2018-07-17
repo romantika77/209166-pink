@@ -1,10 +1,3 @@
-.review-form__container {
-  width: 320px;
-  margin: 0 auto;
-  padding-right: 22px;
-  padding-left: 22px;
-}
-
 .review-form__legend {
   text-transform: uppercase;
   line-height: 18px;
@@ -123,6 +116,7 @@
 .review-form__fieldset {
   margin: 0;
   padding: 0;
+
   &--name,
   &--progress,
   &--contacts,
@@ -133,6 +127,11 @@
 }
 
 .review-form__container {
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 22px;
+  padding-left: 22px;
+
   &--progress {
     padding-top: 40px;
     padding-bottom: 18px;
@@ -168,6 +167,7 @@
 
 .review-form__item {
   padding-top: 22px;
+
   &--progress {
     margin-bottom: 24px;
     padding-bottom: 6px;
@@ -178,6 +178,7 @@
     margin-bottom: 26px;
   }
 }
+
 .review-form__input {
   width: 100%;
   margin-top: 7px;
@@ -285,6 +286,7 @@
       width: 260px;
     }
   }
+
   .review-form {
     display: flex;
     flex-wrap: wrap;
@@ -331,10 +333,10 @@
     }
 
     &--phone {
-        &::after {
-          background-image: url("../img/icon-phone.svg");
-        }
+      &::after {
+        background-image: url("../img/icon-phone.svg");
       }
+    }
   }
 
   .review-form__fieldset {
@@ -372,7 +374,6 @@
     }
 
     &--contacts {
-      width: 100%;
       order: -1;
       margin-top: 0;
       margin-bottom: 12px;
