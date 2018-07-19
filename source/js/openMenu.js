@@ -1,3 +1,5 @@
+"use strict";
+
 var navMain = document.querySelector(".page-header__navigation");
 var navToggle = document.querySelector(".page-header__toggle");
 var pageHeader = document.querySelector(".page-header");

@@ -1,7 +1,22 @@
 @media (min-width: @desktop-width) {
-  .modal {
+  .modal__ok,
+  .modal__error {
+    position: fixed;
+    z-index: 50;
+    display: block;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
     width: 782px;
+    background-color: #ffffff;
+  }
+
+  .modal--opened {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 1s;
   }
 
   .modal__ok,
@@ -45,6 +60,7 @@
     text-transform: uppercase;
     background-color: #2aab6d;
     border: none;
+    cursor: pointer;
 
     &--repair {
       width: 456px;
@@ -52,6 +68,21 @@
 
     &--fault {
       width: 296px;
+    }
+  }
+
+  @keyframes bounce {
+    0%   {
+      transform: translateY(-2000px) translateX(-50%);
+    }
+    70%  {
+      transform: translateX(-50%) translateY(30px);
+    }
+    90%  {
+      transform: translateX(-50%) translateY(-10px);
+    }
+    100% {
+      transform: translateX(-50%) translateY(0);
     }
   }
 }

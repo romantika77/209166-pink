@@ -110,9 +110,9 @@ gulp.task("build", function (done) {
   "clean",
   "copy",
   "style",
-  "webp",
-  "images",
   "compress",
+  "images",
+  "webp",
   "sprite",
   "html",
   done

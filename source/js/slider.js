@@ -1,3 +1,5 @@
+"use strict";
+
 var btn__prev = document.querySelector('.reviews__button--prev'),
     btn__next = document.querySelector('.reviews__button--next');
 var slides = document.querySelectorAll('.reviews__item');
