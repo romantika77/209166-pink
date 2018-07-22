@@ -19,6 +19,7 @@
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
+    <!-- модификатор nojs стилизует хедер при отключенном javascript -->
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <div class="page-header__container">
@@ -139,37 +140,37 @@
           </div>
         </div>
       </section>
-        <div class="content-wrapper">
-          <section class="reviews">
-            <input class="reviews__input reviews__input--input1 visually-hidden" type="radio" id="btn1" name="reviews__input" checked>
-            <input class="reviews__input reviews__input--input2 visually-hidden" type="radio" id="btn2" name="reviews__input">
-            <input class="reviews__input reviews__input--input3 visually-hidden" type="radio" id="btn3" name="reviews__input">
-            <h2 class="visually-hidden">Отзывы</h2>
-            <div class="reviews__container">
-              <div id="show" class="reviews__item reviews__item--item1">
-                <p class="reviews__name">Николай Петров <span class="reviews__feature">25 лет, водитель трамвая</span></p>
-                <p class="reviews__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
-              </div>
-              <div class="reviews__item reviews__item--item2">
-                <p class="reviews__name">Василий Андреев <span class="reviews__feature">42 года, бывший военный</span></p>
-                <p class="reviews__text">&#171;Это приложение вернуло меня к жизни после тяжелой аварии. И пробудило вкус к жизни!&#187;</p>
-              </div>
-              <div class="reviews__item reviews__item--item3">
-                <p class="reviews__name">Елизавета Смирнова <span class="reviews__feature">35 лет, руководитель проекта</span></p>
-                <p class="reviews__text">&#171;Благодаря этому приложению я наконец смогла поменять место жительства!&#187;</p>
-              </div>
+      <div class="content-wrapper">
+        <section class="reviews">
+          <input class="reviews__input reviews__input--input1 visually-hidden" type="radio" id="btn1" name="reviews__input" checked>
+          <input class="reviews__input reviews__input--input2 visually-hidden" type="radio" id="btn2" name="reviews__input">
+          <input class="reviews__input reviews__input--input3 visually-hidden" type="radio" id="btn3" name="reviews__input">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__container">
+            <div id="show" class="reviews__item reviews__item--item1">
+              <p class="reviews__name">Николай Петров <span class="reviews__feature">25 лет, водитель трамвая</span></p>
+              <p class="reviews__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
             </div>
-            <div class="reviews__toggles">
-              <label for="btn1" class="reviews__label reviews__label--label1"><span class="visually-hidden">1</span></label>
-              <label for="btn2" class="reviews__label reviews__label--label2"><span class="visually-hidden">2</span></label>
-              <label for="btn3" class="reviews__label reviews__label--label3"><span class="visually-hidden">3</span></label>
+            <div class="reviews__item reviews__item--item2">
+              <p class="reviews__name">Василий Андреев <span class="reviews__feature">42 года, бывший военный</span></p>
+              <p class="reviews__text">&#171;Это приложение вернуло меня к жизни после тяжелой аварии. И пробудило вкус к жизни!&#187;</p>
             </div>
-            <div class="reviews__controls">
-              <button class="reviews__button reviews__button--prev"><span class="visually-hidden">Назад</span></button>
-              <button class="reviews__button reviews__button--next"><span class="visually-hidden">Вперед</span></button>
+            <div class="reviews__item reviews__item--item3">
+              <p class="reviews__name">Елизавета Смирнова <span class="reviews__feature">35 лет, руководитель проекта</span></p>
+              <p class="reviews__text">&#171;Благодаря этому приложению я наконец смогла поменять место жительства!&#187;</p>
             </div>
-          </section>
-        </div>
+          </div>
+          <div class="reviews__toggles">
+            <label for="btn1" class="reviews__label reviews__label--label1"><span class="visually-hidden">1</span></label>
+            <label for="btn2" class="reviews__label reviews__label--label2"><span class="visually-hidden">2</span></label>
+            <label for="btn3" class="reviews__label reviews__label--label3"><span class="visually-hidden">3</span></label>
+          </div>
+          <div class="reviews__controls">
+            <button class="reviews__button reviews__button--prev"><span class="visually-hidden">Назад</span></button>
+            <button class="reviews__button reviews__button--next"><span class="visually-hidden">Вперед</span></button>
+          </div>
+        </section>
+      </div>
       <section class="tariff">
         <h2 class="tariff__title visually-hidden">Тарифы</h2>
         <input class="tariff__input tariff__input--radio1 visually-hidden" type="radio" id="tariff1" name="tariff-toggle">

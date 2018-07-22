@@ -13,6 +13,12 @@
   background-size: cover;
   background-position: 0 -25px;
   text-align: center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 200%;
+    background-position: center -25px;
+  }
 }
 
 .gallery__title {
@@ -133,6 +139,12 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: auto;
     background-position: -260px -10px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 170%;
+      background-position: center 0;
+    }
   }
 
   .gallery__title {
@@ -249,6 +261,10 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center -150px;
     background-size: 200%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .gallery__promo {

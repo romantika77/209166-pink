@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
 }
 
 .map__decoration {
@@ -36,6 +40,10 @@
   .map {
     height: 393px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 
   .map__decoration {
@@ -59,6 +67,10 @@
   .map {
     height: 520px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 
   .map__triangle {
